@@ -9,14 +9,16 @@ public class User {
     private String UId;
     private String name;
     private String age;
+    private Phone phone;
 
     public User() {
     }
 
-    public User(String UId, String name, String age) {
+    public User(String UId, String name, String age, Phone phone) {
         this.UId = UId;
         this.name = name;
         this.age = age;
+        this.phone = phone;
     }
 
     public String getUId() {
@@ -41,5 +43,13 @@ public class User {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public Phone getPhone() {
+        return phone;
+    }
+
+    public void setPhone(Phone phone) {
+        this.phone = phone;
     }
 }
